@@ -16,7 +16,8 @@
 
 window.onload = function() {
     
-    
+  document.getElementById("myBox").style.display ='block'; 
+  document.getElementById("loadingImage").style.display ='none'; 
   var mySwiper = new Swiper ('.swiper-container-main', {
    direction : 'vertical',
    pagination: '.swiper-pagination-main',
