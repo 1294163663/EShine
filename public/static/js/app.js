@@ -5,6 +5,8 @@
             var s = document.getElementById('show');
             var i = 0;
             timer=setInterval(function(){
+              document.getElementById("myBox").style.display ='block'; //...
+  document.getElementById("loadingImage").style.display ='none'; //...
                 s.innerHTML=story.innerHTML.substring(0,i);
                 i++;
                 if(s.innerHTML==story.innerHTML){
