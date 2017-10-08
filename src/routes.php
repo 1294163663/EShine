@@ -6,7 +6,7 @@ use Slim\Http\Response;
 // Routes
 
 $app->get('/query_result', '\EShine\Controller\NewPeopleController:getApplyStatus')->setName('queryResult');
-$app->get('/apply', '\EShine\Controller\NewPeopleController:newApply')->setName('apply');
+$app->post('/apply', '\EShine\Controller\NewPeopleController:newApply')->setName('apply');
 $app->get('/excel', '\EShine\Controller\NewPeopleController:getNewPeopleExcel')->setName('out');
 
 $app->get('/eshine', function (Request $request, Response $response, array $args) {

@@ -43,9 +43,31 @@ class NewPeopleController extends BaseController
     public function newApply(Request $request, Response $response, array $args)
     {
         $params = $request->getParams();
+
         if (empty($params['name']) || empty($params['phone'])) {
             throw new \Exception("信息不足");
         }
+
+        if (isset($request->getUploadedFiles()['image'])) {
+            $image = $_FILES['image'];
+            if ((($image['type'] == "image/png")
+                    || ($image['type'] == "image/jpeg")
+                    || ($image['type'] == "image/jpg"))
+               )
+            {
+                if ($image["error"] > 0) {
+                    throw new \Exception($image["error"]);
+                } else {
+                    $fileName = __DIR__ . "/../../people_image/" . base64_encode($params['name']) . '.jpg';
+                    move_uploaded_file($image["tmp_name"], $fileName);
+                    $fileUrl = $_SERVER['HTTP_HOST']  . "/EShine/people_image/" . base64_encode($params['name']) . '.jpg';
+                    $params['image'] = $fileUrl;
+                }
+            } else {
+                throw new \Exception("文件格式不对");
+            }
+        }
+
         $people = new NewPeopleModel($params);
         $people->save();
 
