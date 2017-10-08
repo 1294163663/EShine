@@ -48,8 +48,9 @@ class NewPeopleController extends BaseController
             throw new \Exception("信息不足");
         }
 
-        if (isset($request->getUploadedFiles()['image'])) {
-            $image = $_FILES['image'];
+        $image = $_FILES['image'];
+        if (!empty($image['name'])) {
+
             if ((($image['type'] == "image/png")
                     || ($image['type'] == "image/jpeg")
                     || ($image['type'] == "image/jpg"))
@@ -58,9 +59,9 @@ class NewPeopleController extends BaseController
                 if ($image["error"] > 0) {
                     throw new \Exception($image["error"]);
                 } else {
-                    $fileName = __DIR__ . "/../../people_image/" . base64_encode($params['name']) . '.jpg';
+                    $fileName = __DIR__ . "/../../people_image/" . base64_encode($params['name'].$params['phone']) . '.jpg';
                     move_uploaded_file($image["tmp_name"], $fileName);
-                    $fileUrl = $_SERVER['HTTP_HOST']  . "/EShine/people_image/" . base64_encode($params['name']) . '.jpg';
+                    $fileUrl = $_SERVER['HTTP_HOST']  . "/EShine/people_image/" . base64_encode($params['name'].$params['phone']) . '.jpg';
                     $params['image'] = $fileUrl;
                 }
             } else {
