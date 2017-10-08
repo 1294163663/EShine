@@ -48,8 +48,9 @@ class NewPeopleController extends BaseController
             throw new \Exception("信息不足");
         }
 
-        if (empty($request->getUploadedFiles()['image'])) {
-            $image = $_FILES['image'];
+        $image = $_FILES['image'];
+        if (!empty($image['name'])) {
+
             if ((($image['type'] == "image/png")
                     || ($image['type'] == "image/jpeg")
                     || ($image['type'] == "image/jpg"))
