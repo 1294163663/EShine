@@ -36,7 +36,7 @@
 		</div>
 	</nav>
 
-<form action="apply" enctype="multipart/form-data" method="post" onSubmit="verify()">
+<form action="apply" enctype="multipart/form-data" method="post" id="myForm">
 	<div class="row">
 		<div class="form-group col-md-3">
 			<label for="" >姓名：</label>
@@ -109,7 +109,8 @@
 		<input type="file" name="image" >
 	</div>
 	<div class="form-group">
-		<input type="submit" name="" value="提交" class="btn btn-primary" >
+		<!-- <input type="submit" name="" value="提交" class="btn btn-primary" > -->
+		<input type="button" name="" value="提交" class="btn btn-primary" onclick="verify()">
 		<input type="reset" name="" value="撤销" class="btn btn-p">
 	</div>
 </form>
