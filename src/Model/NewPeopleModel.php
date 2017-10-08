@@ -91,9 +91,11 @@ class NewPeopleModel extends Office
     {
         $this->setParams($params);
         $old = $this->find();
-        foreach ($old as $key => $value) {
-            if (!isset($this->{$key})) {
-                $this->{$key} = $value;
+        if (is_array($old)) {
+            foreach ($old as $key => $value) {
+                if (!isset($this->{$key})) {
+                    $this->{$key} = $value;
+                }
             }
         }
     }

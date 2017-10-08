@@ -28,12 +28,6 @@ class NewPeopleController extends BaseController
         // TODO: Implement __invoke() method.
     }
 
-    public function show(Request $request, Response $response, array $args)
-    {
-        return $this->renderer->render($response, 'index.html', $args);
-    }
-
-
     public function getApplyStatus(Request $request, Response $response, array $args)
     {
         $params = $request->getParams();
@@ -43,7 +37,7 @@ class NewPeopleController extends BaseController
         $people = new NewPeopleModel(['name'=>$params['name'], 'phone'=>$params['phone']]);
         $result = $people->find();
         $args['result'] = $result;
-        return $this->renderer->render($response, 'index.html', $args);
+        return $this->renderer->render($response, 'query_result.phtml', $args);
     }
 
     public function newApply(Request $request, Response $response, array $args)
@@ -55,7 +49,7 @@ class NewPeopleController extends BaseController
         $people = new NewPeopleModel($params);
         $people->save();
 
-        return $response->withRedirect($this->router->pathFor('query',['name'=>$params['name'], 'phone'=>$params['phone']]));
+        return $response->withRedirect($this->router->pathFor('queryResult', [], ['name'=>$params['name'], 'phone'=>$params['phone']]));
     }
 
     public function getNewPeopleExcel(Request $request, Response $response, array $args)

@@ -16,7 +16,6 @@
 </head>
 <body>
 
-	
 
 
 <!-- 		<h1 class="page-header">e光青年志愿者服务队报名表</h1>
@@ -29,20 +28,23 @@
 			<div>
 				<ul class="nav navbar-nav">
 
-					<li><a href="index.html">招新页面</a></li>
-					<li><a href="signUp.html">报名页面</a></li>
+                    <li><a href="eshine">招新页面</a></li>
+                    <li><a href="sign_up">报名页面</a></li>
 
 				</ul>
 			</div>
 		</div>
 	</nav>
-	<!-- <div class="text-center">
-		<p>您还未报名，请点击<a href="signUp.html">报名页面</a>进行报名。</p>
-	</div> -->
-	<div class="text-center">
-		<p>您已报名成功！</p>
-	</div>
 
+    <?php if (is_array($result)): ?>
+        <div class="text-center">
+            <p>您已报名成功！</p>
+        </div>
+    <?php else: ?>
+        <div class="text-center">
+            <p>您还未报名，请点击<a href="sign_up">报名页面</a>进行报名。</p>
+        </div>
+    <?php endif; ?>
 
 
 </div>
