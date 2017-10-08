@@ -43,28 +43,6 @@
 			<label for="" >姓名：</label>
 			<input type="text" class="form-control" name="name" required>
 		</div >
-		<div class="form-group col-md-3">
-			<label for="" >性别：</label>
-			<select name="sex" id="" class="form-control">
-				<option value="男">男</option>
-				<option value="女">女</option>
-			</select>
-		</div>
-		<div class="form-group col-md-3" >
-			<label for="">政治面貌：</label>
-			<select name="zhengzhi" id="" class="form-control" >
-				<option value="中共党员">中共党员</option>
-				<option value="共青团员">共青团员</option>
-				<option value="群众">群众</option>
-			</select>
-		</div>	
-		<div class="form-group col-md-3" >
-			<label for="jiguan">籍贯：</label>
-			<input type="text" name="jiguan" id="jiguan" class="form-control">
-		</div>	
-	</div>
-
-	<div class="row">
 		<div class="form-group col-md-4">
 			<label for="class" >班别：</label>
 			<select name="class" id="class" class="form-control" >
@@ -79,31 +57,38 @@
 				<option value="信工冯班">信工冯班</option>
 			</select>
 		</div >
-		<div class="form-group col-md-4">
-			<label for="" >手机号码：</label>
-			<input type="text" class="form-control" name="phone" required>
-		</div>
-		<div class="form-group col-md-4" >
-			<label for="">短号：</label>
-			<input type="text" class="form-control" name="short_name">
-		</div>	
 	</div>
 
 	<div class="row">
 		<div class="form-group col-md-4">
+			<label for="" >手机号码：</label>
+			<input type="text" class="form-control" name="phone" required>
+		</div>
+		<div class="form-group col-md-4">
 			<label for="" >宿舍地址：</label>
 			<input type="text" class="form-control" name="domi">
 		</div >
+	</div>
+
+	<div class="row">
+
+		<div class="form-group col-md-4">
+			<label for="" >邮箱：</label>
+			<input type="text" class="form-control" name="email">
+		</div>
 		<div class="form-group col-md-4">
 			<label for="" >qq号码：</label>
 			<input type="text" class="form-control" name="qq">
 		</div>
+	</div>
+
+	<div class="row">
+
 		<div class="form-group col-md-4" >
 			<label for="">已加入组织或部门：</label>
 			<input type="text" class="form-control" name="department">
-		</div>	
+		</div>
 	</div>
-
 
 	<div class="form-group">
 		<label for="">个人介绍（性格兴趣特长等）：</label>
@@ -112,7 +97,7 @@
 
 	<div class="form-group">
 		<label for="">你认为如何才能做一个合格的志愿者：</label>
-		<textarea class="form-control" name="hobby"> </textarea>
+		<textarea class="form-control" name="how"> </textarea>
 	</div>
 
 	<div class="form-group">
@@ -129,8 +114,6 @@
 		<input type="reset" name="" value="撤销" class="btn btn-p">
 	</div>
 </form>
-
 </div>
-
 </body>
 </html>

@@ -38,11 +38,7 @@ class NewPeopleModel extends Office
      */
     public $class;
 
-    /**
-     * @var string
-     * @outName 性别
-     */
-    public $sex;
+
 
     /**
      * @var string
@@ -64,27 +60,39 @@ class NewPeopleModel extends Office
 
     /**
      * @var string
+     * @outName QQ
+     */
+    public $qq;
+
+    /**
+     * @var string
+     * @outName 已加组织和部门
+     */
+    public $department;
+
+    /**
+     * @var string
      * @outName 个人介绍
      */
     public $introduce;
 
     /**
      * @var string
-     * @outName 兴趣爱好
+     * @outName 如何成为一个合格的志愿者
      */
-    public $hobby;
-
-    /**
-     * @var string
-     * @outName 曾经获奖
-     */
-    public $prize;
+    public $how;
 
     /**
      * @var string
      * @outName 工作建议及设想
      */
     public $suggestion;
+
+    /**
+     * @var string
+     * @outName 照片
+     */
+    public $image;
 
 
     public function __construct($params = [])
