@@ -22,4 +22,9 @@ $app->get('/sign_up', function (Request $request, Response $response, array $arg
     return $this->renderer->render($response, 'sign_up.html', $args);
 })->setName('sign_up');
 
+$app->get('/[{extra}]', function ($request, $response, $args) {
+    return $this->renderer->render($response, 'index.html', $args);
+});
+
+
 
