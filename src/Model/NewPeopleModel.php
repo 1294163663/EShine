@@ -151,7 +151,11 @@ class NewPeopleModel extends Office
         }
         $vars = $this->getSelfVar();
         if ($old = $this->find(['name' => $this->name, 'phone' => $this->phone])) {
-            $vars['id'] = $old['id'];
+            foreach ($old as $key => $value) {
+                if (empty($vars[$key]) && !empty($value)) {
+                    $vars[$key] = $value;
+                }
+            }
             $flag = $this->db()->update($this->collectName())->cols($vars)->where("id={$old['id']}")->query();
         } else {
             unset($vars['id']);
