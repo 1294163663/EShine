@@ -57,8 +57,8 @@
       <file leaf-file-name="sign_up.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/sign_up.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="81" column="45" lean-forward="true" selection-start-line="81" selection-start-column="45" selection-end-line="81" selection-end-column="45" />
+            <state relative-caret-position="300">
+              <caret line="96" column="27" lean-forward="false" selection-start-line="96" selection-start-column="27" selection-end-line="96" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -375,7 +375,7 @@
       <updated>1507355340728</updated>
       <workItem from="1507355342409" duration="1376000" />
       <workItem from="1507439246360" duration="16894000" />
-      <workItem from="1507557569448" duration="1599000" />
+      <workItem from="1507557569448" duration="2265000" />
     </task>
     <task id="LOCAL-00001" summary="edit route for index">
       <created>1507443481897</created>
@@ -426,11 +426,18 @@
       <option name="project" value="LOCAL" />
       <updated>1507558183425</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="取消邮箱框和何如成为一个优秀的志愿者">
+      <created>1507559657762</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1507559657762</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19869000" />
+    <option name="totallyTimeSpent" value="20535000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -469,7 +476,8 @@
     <MESSAGE value="修改宣讲会名称" />
     <MESSAGE value="照片上传。没有照片时候的判断" />
     <MESSAGE value="新表单部分数据覆盖，但是空数据不覆盖" />
-    <option name="LAST_COMMIT_MESSAGE" value="新表单部分数据覆盖，但是空数据不覆盖" />
+    <MESSAGE value="取消邮箱框和何如成为一个优秀的志愿者" />
+    <option name="LAST_COMMIT_MESSAGE" value="取消邮箱框和何如成为一个优秀的志愿者" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -806,8 +814,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/sign_up.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="81" column="45" lean-forward="true" selection-start-line="81" selection-start-column="45" selection-end-line="81" selection-end-column="45" />
+        <state relative-caret-position="300">
+          <caret line="96" column="27" lean-forward="false" selection-start-line="96" selection-start-column="27" selection-end-line="96" selection-end-column="27" />
           <folding />
         </state>
       </provider>
