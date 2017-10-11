@@ -1,6 +1,6 @@
 function verify(){
     console.log("ok");
-	var myreg1 = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
+	var myreg1 = /^(\d{11})$/;
 	var myreg2 = /^[\u4e00-\u9fa5]{2,8}$/;
 	if (!myreg2.test($("#studentName").val())) {
 		alert('请输入正确的姓名！'); 
