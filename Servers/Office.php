@@ -32,7 +32,7 @@ abstract class Office implements BaseInterface
                 }
                 $x = 0;
                 foreach ($data as $key => $value) {
-                    $objPHPExcel->getActiveSheet()->setCellValue(chr($x+65).($y+2), (isset($massage[$key])?$massage[$key]:''));
+                    $objPHPExcel->getActiveSheet()->setCellValue(chr($x+65).($y+2), (isset($massage[$key])?$massage[$key].' ':''));
                     $x++;
                 }
             }
