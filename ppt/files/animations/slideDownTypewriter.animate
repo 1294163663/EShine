@@ -1,0 +1,16 @@
+/* 
+  Name:			SlideDownTypewriter
+  Type:			Entrance
+  Description:	SlideDown Typewriter Effect
+  Version:		2.0	
+  locale:		{"zh-Hans":"行下滑文本效果", "en-US":"Slide Down Typewriter"}
+  Class:        SlideDownTypewriter
+  LimitType:    MText
+ */
+ 
+@keyframes slideDownTypewriter {
+	
+}
+.slideDownTypewriter{
+	animation-duration: 3s;
+}

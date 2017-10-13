@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e47ffa86-c503-4195-987d-70b87bf74937" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Servers/Office.php" afterPath="$PROJECT_DIR$/Servers/Office.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -111,8 +110,8 @@
       <file leaf-file-name="Office.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Servers/Office.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+            <state relative-caret-position="457">
+              <caret line="57" column="36" lean-forward="true" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -259,7 +258,7 @@
       <workItem from="1507439246360" duration="16894000" />
       <workItem from="1507557569448" duration="3920000" />
       <workItem from="1507743504207" duration="562000" />
-      <workItem from="1507784414916" duration="375000" />
+      <workItem from="1507784414916" duration="631000" />
     </task>
     <task id="LOCAL-00001" summary="edit route for index">
       <created>1507443481897</created>
@@ -331,11 +330,18 @@
       <option name="project" value="LOCAL" />
       <updated>1507745491614</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="输出excel表的数字形式">
+      <created>1507784821031</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1507784821031</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23127000" />
+    <option name="totallyTimeSpent" value="23383000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -377,7 +383,8 @@
     <MESSAGE value="取消邮箱框和何如成为一个优秀的志愿者" />
     <MESSAGE value="加入如成为一个优秀的志愿者" />
     <MESSAGE value="修改手机号码表单验证" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改手机号码表单验证" />
+    <MESSAGE value="输出excel表的数字形式" />
+    <option name="LAST_COMMIT_MESSAGE" value="输出excel表的数字形式" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -823,8 +830,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Servers/Office.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        <state relative-caret-position="457">
+          <caret line="57" column="36" lean-forward="true" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
           <folding />
         </state>
       </provider>

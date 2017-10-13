@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <fonts>
+    <font name="Webding" className="" url="./files/fonts/font-0-0-2017101317419788.swf" ttfurl="./files/fonts/font-0-0-2017101317419788.ttf"/>
+    <font name="思源黑体" className="FskyFont_syht" url="./files/fonts/font-1-0-2017101317419805.swf" ttfurl="./files/fonts/font-1-0-2017101317419805.ttf"/>
+    <font name="思源黑体" className="FskyFont_syht_Bold" url="./files/fonts/font-1-1-20171013174113190.swf" ttfurl="./files/fonts/font-1-1-20171013174113190.ttf"/>
+    <font name="思源黑体" className="FskyFont_syht_Italic" url="./files/fonts/font-1-2-20171013174115551.swf" ttfurl="./files/fonts/font-1-2-20171013174115551.ttf"/>
+    <font name="思源黑体" className="FskyFont_syht_Bold_Italic" url="./files/fonts/font-1-3-201710131741186.swf" ttfurl="./files/fonts/font-1-3-201710131741186.ttf"/>
+  </fonts>
+</data>

@@ -1,0 +1,16 @@
+/* 
+  Name:			PaperAirplaneEnter
+  Type:			Entrance
+  Description:	PaperAirplaneEnter
+  Version:		2.0	
+  locale:		{"zh-Hans":"纸飞机", "en-US":"Paper Airplane"}
+  Class:        PaperAirplaneEnter
+ */
+ 
+@keyframes paperAirplaneEnter{
+	
+}
+
+.paperAirplaneEnter{
+	animation-duration: 2s;
+}

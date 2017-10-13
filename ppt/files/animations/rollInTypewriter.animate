@@ -1,0 +1,17 @@
+/* 
+  Name:			RollInTypewriter
+  Type:			Entrance
+  Description:	RollIn Typewriter Effect
+  Version:		2.0	
+  locale:		{"zh-Hans":"行卷入文本效果", "en-US":"Roll In Typewriter"}
+  Class:        RollInTypewriter
+  LimitType:    MText
+  Dependence:	rollIn
+ */
+ 
+@keyframes rollInTypewriter {
+	
+}
+.rollInTypewriter{
+	animation-duration: 3s;
+}
